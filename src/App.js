@@ -1,13 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Technologies from './Technologies';
+import Header from "./Header";
 
-function App() {
+const App = () => {
+  return (
+    <div>
+      <Technologies />
+      <Header />
+    </div>
+  );
+}
+
+export default App;
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          First Page <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -19,7 +31,18 @@ function App() {
         </a>
       </header>
     </div>
+    );
+  }
+*/
+
+/*
+const App = () => {
+  return (
+    <div className="App">
+      <il>css</il>
+      <il>html</il>
+      <il>react</il>
+    </div>
   );
 }
-
-export default App;
+*/
