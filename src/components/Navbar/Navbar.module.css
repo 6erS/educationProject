@@ -1,0 +1,15 @@
+.nav {
+  grid-area: n;
+  background-color: rgb(95, 110, 110);
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+}

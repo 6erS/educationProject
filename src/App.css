@@ -1,3 +1,12 @@
-li {
-  list-style-type: disc;
-};
+.app-wrapper {
+  display: grid;
+
+  grid-template-areas: 
+  "h h"
+  "n c";
+  grid-template-columns: 1fr 5fr;
+  grid-row: 150px auto;
+  
+  margin: 30px 200px;
+}
+

@@ -1,48 +1,17 @@
 import './App.css';
-import Technologies from './Technologies';
-import Header from "./Header";
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import ProfileContent from './components/Content/Profile/ProfileContent';
+
 
 const App = () => {
   return (
-    <div>
-      <Technologies />
+    <div className='app-wrapper'>
       <Header />
+      <Navbar />
+      <ProfileContent />
     </div>
   );
 }
 
 export default App;
-
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          First Page <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-    );
-  }
-*/
-
-/*
-const App = () => {
-  return (
-    <div className="App">
-      <il>css</il>
-      <il>html</il>
-      <il>react</il>
-    </div>
-  );
-}
-*/
