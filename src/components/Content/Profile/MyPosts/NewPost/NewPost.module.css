@@ -1,3 +1,28 @@
-.new_post{
-  text-align: center;
+.newPosts {
+  margin-bottom: 20px;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.newPosts textarea {
+  width: 90%;
+  height: auto;
+
+  resize: none;
+  border: none;
+  padding: 20px 20px 0;
+  color: rgb(109, 109, 109);
+  background-color: rgb(223, 223, 241);
+  font-size: 200%;
+}
+
+.newPostsButton {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  font-size: 160%;
+  border: none;
+  color: white;
+  background-color: rgb(119, 120, 124);
+  right: 100%;
 }

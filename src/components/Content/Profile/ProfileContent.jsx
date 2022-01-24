@@ -1,17 +1,19 @@
 import React from "react";
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./MyPosts/ProfileInfo/ProfileInfo";
 import style from "./ProfileContent.module.css";
 
-const ProfileContent = () => {
+const ProfileContent = (props) => {
     return (
         <div className={style.content}>
             <div className={style.content__background}>
-                <img src='https://storge.pic2.me/cm/4096x1536/267/52c1edb5c6bfd.jpg' alt='' />
+                <img src='https://static.vecteezy.com/system/resources/thumbnails/003/127/955/small/abstract-white-and-grey-background-with-dynamic-waves-shape-free-vector.jpg' alt='' />
             </div>
-            <div className={style.mini_profile}>
-                <img src='https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg' alt='' /> + Discription
+            <div className={style.whole_profile}>
+                <ProfileInfo localState={props.state.ProfilePage.ProfileInfoData}/>
+                <MyPosts localPostState={props.state.ProfilePage.PostsData} />
             </div>
-            <MyPosts />
+
         </div>
     );
 }

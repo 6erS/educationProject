@@ -2,17 +2,17 @@ import style from './MyPosts.module.css'
 import NewPost from './NewPost/NewPost';
 import Post from './Post/Post';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+    let posts = props.state.ProfilePage.PostsData
+        .map(p => <Post massage={p.text} LikeCount={`Like: ${p.count}`} />);
+
     return (
-        <div>
-            <div>
-                <p>My posts</p>
+        <div className={style.wholeModule}>
+            <div >
+                <h1 className={style.header}>My posts</h1>
                 <NewPost />
             </div>
-            <div className={style.posts}>
-                <Post massage = "Hello world!"/>
-                <Post massage = "It's my second post" />
-            </div>
+            {posts}
         </div>
     );
 }
