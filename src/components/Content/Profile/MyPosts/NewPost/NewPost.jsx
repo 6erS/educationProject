@@ -1,12 +1,24 @@
 import style from './NewPost.module.css';
+import React from "react";
+import {addPost} from "../../../../../data/Profile/myPostsState";
 
 const NewPost = () => {
+
+    let newPostTextRef = React.createRef();
+
+    function newPostCreator() {
+        let newPostText = newPostTextRef.current.value;
+        debugger;
+        addPost(newPostText);
+        alert(newPostText)
+    }
+
     return (
         <div className={style.newPosts}>
-            <div className={style.item}>
-                <textarea placeholder='your news...'>{null}</textarea>
+            <div>
+                <textarea ref={newPostTextRef} placeholder='your news...'/>
                 <br />
-                <input className={style.newPostsButton} type='button' value='Send' />
+                <input onClick={newPostCreator} className={style.newPostsButton} type='button' defaultValue='Send' />
             </div>
         </div>
     );

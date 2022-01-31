@@ -1,0 +1,5 @@
+.massages {
+    display: grid;
+    grid-template-areas: "n n";
+    grid-column: 1fr 10fr;
+}

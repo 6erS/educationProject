@@ -1,0 +1,18 @@
+.dialog_head {
+    background-color: rgb(80, 110, 110);
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.active {
+    color: rgba(255, 255, 255, 0.452);
+    text-decoration: none;
+    text-transform: none;
+}

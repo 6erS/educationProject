@@ -1,0 +1,29 @@
+.container {
+    margin: 20px 20px;
+    font-size: 18px;
+}
+
+.container img {
+    height: 80px;
+    border-radius: 80px;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container a:link {
+    color: green;
+}
+
+.container a:visited {
+    color: white;
+}
+
+.container a:hover {
+    color: inherit;
+}
+
+.container a:active {
+    color: rgba(255, 255, 255, 0.452);
+}
