@@ -2,6 +2,9 @@ import style from './MyPosts.module.css';
 import NewPost from './NewPost/NewPost';
 import Post from './Post/Post';
 import myPostsState from "../../../../data/Profile/myPostsState";
+import {addPost} from "../../../../data/Profile/myPostsState";
+
+addPost('dsfdsdg')
 
 const MyPosts = () => {
     let posts = myPostsState
