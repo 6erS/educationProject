@@ -4,14 +4,4 @@ let myPostsState = [
     { text: "Hello world!", count: 54 }
 ]
 
-export let addPost = (postsMassage) => {
-    debugger;
-    let newPost = {
-        count: 1,
-        text: postsMassage
-    };
-
-    myPostsState.push(newPost);
-}
-
 export default myPostsState;
